@@ -36,7 +36,7 @@ import "dotenv/config";
 //////////////////routes//////////////
 //home route//
 app.get("/", (req, res) => {
-  res.sendFile("html/signup.html", {
+  res.sendFile("html/index.html", {
     root: "public",
   });
 });
