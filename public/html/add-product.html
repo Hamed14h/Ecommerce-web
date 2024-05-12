@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/add-product.css" />
+    <title>Add-product</title>
+  </head>
+  <body>
+    <img
+      src="https://i.stack.imgur.com/kOnzy.gif"
+      class="loader"
+      alt="imagload"
+    />
+    <h1 class="title">add product</h1>
+    <div>
+      <p class="error">some error occured</p>
+    </div>
+    <section id="header">
+      <a href="#"><img src="/img/logo.png" class="logo" alt="logo" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="shop.html" class="active" >Shop</a></li>
+          <li><a href="blog.html" >Blog</li>
+          <li><a href="about.html" >About</a></li>
+          <li><a href="contact.html" >Contact</a></li>
+          <li><a href="cart.html" class="lg-bag"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+          <a href="#" id="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html" ><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </section >
+    
+    <section id="prodetails" class="section-p1 product-section" >
+      <div class="image-upload-container">
+        <input type="file" id="upload-image" accept="image/png, image/jpeg" hidden>
+        <label for="upload-image" class="upload-overlay">Upload image</label>
+        <img class="product-img" >
+    </div>
+    
+
+      
+      <div class="single-pro-details single-profile product-detail" >
+        <h6 class="product-title product-name"  contenteditable="true" data-placeholder="product name">Home/T-Shirt</h6>
+        
+        
+        <select >
+          <option>Select Size</option>
+          <option>XL</option>
+          <option>XXL</option>
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Larg</option>
+        </select>
+        <input type="number" value="1"  contenteditable="true" data-placeholder="Details,you can add">
+        <p class="product-des"  contenteditable="true" data-placeholder="short description">Exnd comfort. Crafted from 100% high-grade cotton, thid softness, makes a button-down colloccasion. Whethis versatile shirt seamles</p>
+        <p class="price" contenteditable="true" data-placeholder="price without $"></p>
+        
+       
+        
+    
+       </div>
+
+    </section>
+    <section class="sec"><div class="Details-des">
+      <h4 class="section-title">Product Details</h4>
+      <p class="des"  contenteditable="true" data-placeholder="Details,you can add"></p>
+   </div>
+   <div class="tags-section">
+    <h4 class="section-title">Tags</h4>
+    <p class="text">enter some tags related to product</p>
+    <p class="tags"  contenteditable="true" data-placeholder="Details,you can add">3 tags</p>
+
+   </div>
+   </section>
+   <div class="btn-wrapper">
+    <button class="normal product-btn add-product-btn">add product</button>
+    <button class="normal product-btn draft-btn">save draft</button>
+   </div>
+
+    
+  
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>sign up for newsletters</h4>
+        <p>Get E-mail updates about our latest shop and <span>spacial offers.</span></p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="your email adress">
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+    <footer class="section-p1">
+      <div class="col ">
+        <img class="logo" src="img/logo.png" alt="">
+        <h4>contact</h4>
+        <p> <strong>Adress:</strong> ilse of dog,canary Wharf,london</p>
+        <p> <strong>Phone:</strong>07474769547</p>
+       <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <a href=""><i class="fab fa-facebook"></i> </a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-pinterest"></i> </a>
+          <a href=""><i class="fab fa-youtube"></i></a>
+         
+        </div>
+       </div>
+      </div>
+      <div class="col">
+        <h4>About</h4>
+        <a href="">About us</a>
+        <a href="">Delivery information</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Terms and conditions</a>
+        <a href="">Contact us</a>
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="">Sign In</a>
+        <a href="">View Cart</a>
+        <a href="">My Wishlist</a>
+        <a href="">Track my Order</a>
+        <a href="">Help</a>
+      </div>
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>Form App Store or Google Play</p>
+        <div class="row">
+          <a href=""> <img src="img/pay/app.jpg" alt=""></a>
+          <a href=""><img src="img/pay/play.jpg" alt="img/pay/play.jpg"></a>
+        </div>
+        <p> Secured Pay</p>
+        <img src="img/pay/pay.png" alt="">
+      </div>
+     
+    </footer>
+    <footer class="copywrite">2023,copywriting by Ahmed Juned</footer>
+    <script src="/js/add-product.js">
+    
+    </script>
+     <script src="/js/common.js">
+    
+     </script>
+    
+  </body>
+</html>

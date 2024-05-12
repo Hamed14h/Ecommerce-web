@@ -1,0 +1,188 @@
+body {
+  padding: 100px 0;
+}
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  z-index: 5;
+  display: none;
+}
+.title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.error {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  min-height: 100px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
+  transition: 1rem;
+  line-height: 1.2rem;
+  z-index: 9;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ff3737;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  border: 1px solid #cacaca;
+}
+.error.show {
+  opacity: 1;
+}
+.product-img {
+  background: #fff;
+  width: 100%;
+}
+.image-upload-container {
+  width: 35%;
+  position: relative;
+  height: 500px;
+  border: 1px solid chocolate;
+  margin-right: 20px;
+}
+.upload-overlay {
+  margin-left: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: "Times New Roman", Times, serif;
+  opacity: 0;
+  transition: -0.5;
+  text-transform: capitalize;
+}
+.upload-overlay:hover {
+  opacity: 1;
+}
+.disable {
+  pointer-events: none;
+  filter: grayscale(1);
+}
+.cart-btn {
+  background: #d5be8b;
+}
+*[contenteditable="true"] {
+  outline: none;
+  border: 2px solid #caca;
+  padding: 10px;
+  text-transform: uppercase;
+}
+*[contenteditable="true"]:focus {
+  border-color: #e6c274;
+}
+/* Section Titles */
+.section-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Product Details and Tags Section */
+.Details-des,
+.tags-section {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.des,
+.tags {
+  background-color: #f9f9f9;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  min-height: 100px; /* Ensures the element is visibly clickable even if empty */
+}
+
+.des:focus,
+.tags:focus {
+  border-color: #a2a2a2;
+}
+
+/* Placeholder Styles */
+.des:before,
+.tags:before {
+  content: attr(data-placeholder);
+  display: block; /* Makes it visible */
+  color: #ccc;
+}
+
+/* Button Styles */
+.normal.product-btn {
+  background-color: #d5be8b; /* Default button background */
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px; /* Adds some space between the buttons */
+  transition: background-color 0.3s ease;
+}
+
+.normal.product-btn:hover {
+  background-color: #cba96e; /* Darker shade on hover */
+}
+
+.add-product-btn {
+  /* Specific styles for add product button if needed */
+}
+
+.draft-btn {
+  background-color: #bbb; /* Different color for draft button */
+}
+
+.draft-btn:hover {
+  background-color: #999; /* Darker shade on hover for draft button */
+}
+
+/* Responsive Flexbox Layout for Sections */
+.sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px; /* Ensures some space between the two sections */
+}
+
+@media (max-width: 768px) {
+  .sec {
+    flex-direction: column;
+  }
+}
+
+/* Button Wrapper Centering */
+.btn-wrapper {
+  text-align: center;
+}
+.sec {
+  margin: 20px;
+}

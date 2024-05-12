@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: #fff;
+  font-family: "Times New Roman", Times, serif;
+}
+.seller-img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+}
+.form {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-title {
+  font-size: 1.8rem;
+  color: #d5be8b;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+input,
+textarea {
+  width: 70%;
+  border: 1px, solid #ccc;
+  border-radius: 5px;
+  height: 1.2rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  padding: 10px;
+  margin: 10px 0;
+}
+textarea {
+  height: 6rem;
+  font-family: "Times New Roman", Times, serif;
+  resize: none;
+  outline: none;
+}
+.apply-btn {
+  width: 250px;
+  padding: 10px 25px;
+  margin-top: 10px;
+  border: 10px 0;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.apply-btn:hover {
+  background: linear-gradient(
+    135deg,
+    #000000,
+    #6e8efb
+  ); /* Hover state as specified */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 1.15);
+  transform: translateY(-6px); /* Moves up slightly on hover */
+}
+.apply-btn:active {
+  background: linear-gradient(
+    135deg,
+    #0a020e,
+    #a777e3
+  ); /* Active state as specified */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 2.2);
+  transform: translateY(4px); /* Simulates a pressing effect */
+}
