@@ -29,8 +29,8 @@ const app = express();
 app.use(express.static("public"));
 app.use(express.json());
 ///////////aws for add-product/////////////
-import aws from "aws-sdk";
-import "dotenv/config";
+// import aws from "aws-sdk";
+// import "dotenv/config";
 //aws setup//
 
 //////////////////routes//////////////
